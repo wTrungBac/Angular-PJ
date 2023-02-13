@@ -1,0 +1,28 @@
+/*
+.navbar-header{
+    border-radius: 0.75rem;
+    background-color: #fff;
+    padding: 0 5px;
+    cursor: pointer;
+    display: flex;
+} */
+
+
+.navbar-brand img{
+    height: 78px;
+    width: 195px;
+    margin-left: 20px;
+}
+
+.form-control{
+  width: 500px;
+  margin-left: 160px;
+}
+
+.material-icons{
+  padding-top: 8px;
+}
+
+.logo{
+  padding-bottom: 5px;
+}
