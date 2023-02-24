@@ -1,2 +1,8 @@
-<app-header></app-header>
-<p>product-list works!</p>
+<mat-grid-list cols="6" rowHeight="fit" style="height: 600px" gutterSize="10px">
+  <mat-grid-tile rowspan="2">
+    <app-category></app-category>
+  </mat-grid-tile>
+  <mat-grid-tile rowspan="2" colspan="5">
+    <app-product></app-product>
+  </mat-grid-tile>
+</mat-grid-list>

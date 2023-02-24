@@ -11,6 +11,10 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
 import { ProductListComponent } from './components/page/product-list/product-list.component';
 import { ProductComponent } from './components/shared/product/product.component';
+import {MatGridListModule} from '@angular/material/grid-list';
+import {MatSliderModule} from '@angular/material/slider';
+import { BannerComponent } from './components/shared/banner/banner.component';
+import { CategoryComponent } from './components/shared/category/category.component';
 
 @NgModule({
   declarations: [
@@ -19,14 +23,18 @@ import { ProductComponent } from './components/shared/product/product.component'
     FooterComponent,
     AppComponent,
     ProductListComponent,
-    ProductComponent
+    ProductComponent,
+    BannerComponent,
+    CategoryComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatButtonModule,
-    MatIconModule
+    MatIconModule,
+    MatGridListModule,
+    MatSliderModule
   ],
   providers: [],
   bootstrap: [AppComponent]
