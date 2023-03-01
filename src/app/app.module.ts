@@ -15,6 +15,11 @@ import {MatGridListModule} from '@angular/material/grid-list';
 import {MatSliderModule} from '@angular/material/slider';
 import { BannerComponent } from './components/shared/banner/banner.component';
 import { CategoryComponent } from './components/shared/category/category.component';
+import { CardComponent } from './components/shared/card/card.component';
+import { SwiperModule } from 'swiper/angular';
+import {MatCardModule} from '@angular/material/card';
+import {MatListModule} from '@angular/material/list';
+import { FeatureComponent } from './components/shared/feature/feature.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +30,9 @@ import { CategoryComponent } from './components/shared/category/category.compone
     ProductListComponent,
     ProductComponent,
     BannerComponent,
-    CategoryComponent
+    CategoryComponent,
+    CardComponent,
+    FeatureComponent
   ],
   imports: [
     BrowserModule,
@@ -34,7 +41,10 @@ import { CategoryComponent } from './components/shared/category/category.compone
     MatButtonModule,
     MatIconModule,
     MatGridListModule,
-    MatSliderModule
+    MatSliderModule,
+    SwiperModule,
+    MatCardModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

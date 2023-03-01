@@ -7,19 +7,32 @@
     display: flex;
 } */
 
-
-.navbar-brand img{
-    height: 78px;
-    width: 195px;
-    margin-left: 20px;
+.navbar{
+  padding: 1.5rem 1rem 1.5rem 1rem;
+  box-shadow: 0 1px 10px 1px #aaa;
+}
+.navbar-brand{
+  color: #166729;
+  font-size: 24px;
+  font-weight: 400;
 }
 
 .form-control{
   width: 500px;
   margin-left: 160px;
+  border: 1px solid #166729;
+  border-radius: 5px;
+  padding: 1.375rem 1.375rem;
+}
+
+.me-2{
+  margin-left: 5.5rem;
 }
 
 .material-icons{
   padding-top: 8px;
 }
 
+.mat-mdc-button.mat-mdc-button-base{
+  margin-right: 16px;
+}

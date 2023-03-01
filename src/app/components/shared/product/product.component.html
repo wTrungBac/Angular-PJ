@@ -1,131 +1,24 @@
-<h2 class="mt-5 pl-3">Sản phẩm bán chạy</h2>
-<div class="row mt-5 mb-5">
-  <div class="col-md-2">
-    <div class="card text-left">
-      <img class="card-img-top" src="./assets/img/products/pd_1.jpg" alt="">
-      <div class="card-body">
-        <h4 class="card-title">Siro Healthy New Kids hỗ trợ kích thích tiêu hóa, giúp ăn ngon Siro Healthy New Kids (120ml)</h4>
-        <p class="card-text">
-          81.000đ/Chai
-        </p>
-      </div>
-    </div>
-  </div>
-  <div class="col-md-2">
-    <div class="card text-left">
-      <img class="card-img-top" src="./assets/img/products/pd_2.webp" alt="">
-      <div class="card-body">
-        <h4 class="card-title">Siro bổ phế Bối Mẫu Forte Mom And Baby Tất Thành hỗ trợ giảm ho, đau rát họng, khản tiếng (125ml)</h4>
-        <p class="card-text">
-          55.000đ/Chai
-        </p>
-      </div>
-    </div>
-  </div>
-  <div class="col-md-2">
-    <div class="card text-left">
-      <img class="card-img-top" src="./assets/img/products/pd_3.webp" alt="">
-      <div class="card-body">
-        <h4 class="card-title">Dung dịch xịt Xuyên Tâm Liên Hải Thượng Vương Royal Care giảm ho, giảm đờm Royal Care (30ml)</h4>
-        <p class="card-text">97.000đ/Hộp</p>
-      </div>
-    </div>
-  </div>
-  <div class="col-md-2">
-    <div class="card text-left">
-      <img class="card-img-top" src="./assets/img/products/pd_4.jpg" alt="">
-      <div class="card-body">
-        <h4 class="card-title">Viên uống Omexxel Ginkgo 120 Excelife hỗ trợ tăng cường tuần hoàn máu não, tốt cho tim mạch (30 viên)</h4>
-        <p class="card-text">264.000đ/Hộp</p>
-      </div>
-    </div>
-  </div>
-  <div class="col-md-2">
-    <div class="card text-left">
-      <img class="card-img-top" src="./assets/img/products/pd_1.jpg" alt="">
-      <div class="card-body">
-        <h4 class="card-title">Siro Healthy New Kids hỗ trợ kích thích tiêu hóa, giúp ăn ngon Siro Healthy New Kids (120ml)</h4>
-        <p class="card-text">
-          81.000đ/Chai
-        </p>
-      </div>
-    </div>
-  </div>
-  <div class="col-md-2">
-    <div class="card text-left">
-      <img class="card-img-top" src="./assets/img/products/pd_2.webp" alt="">
-      <div class="card-body">
-        <h4 class="card-title">Siro bổ phế Bối Mẫu Forte Mom And Baby Tất Thành hỗ trợ giảm ho, đau rát họng, khản tiếng (125ml)</h4>
-        <p class="card-text">
-          81.000đ/Chai
-        </p>
-      </div>
-    </div>
-  </div>
+<!-- <div style="max-width: 400px; padding: 4em;"> -->
+<div class="mt-5">
+  <ul class="product list-item">
+    <li *ngFor="let eachproduct of products;">
+      <mat-card style="box-shadow: 0 0 12px #aaa; border-radius: 12px; cursor: pointer; padding: 12px; display: block; box-sizing: border-box; transform: scale(1); max-width: 300px; padding: 2rem; margin: 0 auto">
+        <mat-card-header>
+          <img
+          [src]="eachproduct.productSrc"
+          style="height: 200px; width: 200px; margin: 0 auto" mat-card-xl-image>
+        </mat-card-header>
+        <mat-card-content>
+          <mat-card-subtitle>
+            <p>Siro Healthy New Kids hỗ trợ kích thích tiêu hóa, giúp ăn ngon (120ml)</p>
+          </mat-card-subtitle>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </mat-card-content>
+      </mat-card>
+    </li>
+  </ul>
 </div>
-
-<h2 class="mt-5 pl-3">Sản phẩm nổi bật</h2>
-<div class="row mt-5 mb-5">
-  <div class="col-md-2">
-    <div class="card text-left">
-      <img class="card-img-top" src="./assets/img/products/pd_1.jpg" alt="">
-      <div class="card-body">
-        <h4 class="card-title">Siro Healthy New Kids hỗ trợ kích thích tiêu hóa, giúp ăn ngon Siro Healthy New Kids (120ml)</h4>
-        <p class="card-text">
-          81.000đ/Chai
-        </p>
-      </div>
-    </div>
-  </div>
-  <div class="col-md-2">
-    <div class="card text-left">
-      <img class="card-img-top" src="./assets/img/products/pd_2.webp" alt="">
-      <div class="card-body">
-        <h4 class="card-title">Siro bổ phế Bối Mẫu Forte Mom And Baby Tất Thành hỗ trợ giảm ho, đau rát họng, khản tiếng (125ml)</h4>
-        <p class="card-text">
-          55.000đ/Chai
-        </p>
-      </div>
-    </div>
-  </div>
-  <div class="col-md-2">
-    <div class="card text-left">
-      <img class="card-img-top" src="./assets/img/products/pd_3.webp" alt="">
-      <div class="card-body">
-        <h4 class="card-title">Dung dịch xịt Xuyên Tâm Liên Hải Thượng Vương Royal Care giảm ho, giảm đờm Royal Care (30ml)</h4>
-        <p class="card-text">97.000đ/Hộp</p>
-      </div>
-    </div>
-  </div>
-  <div class="col-md-2">
-    <div class="card text-left">
-      <img class="card-img-top" src="./assets/img/products/pd_4.jpg" alt="">
-      <div class="card-body">
-        <h4 class="card-title">Viên uống Omexxel Ginkgo 120 Excelife hỗ trợ tăng cường tuần hoàn máu não, tốt cho tim mạch (30 viên)</h4>
-        <p class="card-text">264.000đ/Hộp</p>
-      </div>
-    </div>
-  </div>
-  <div class="col-md-2">
-    <div class="card text-left">
-      <img class="card-img-top" src="./assets/img/products/pd_1.jpg" alt="">
-      <div class="card-body">
-        <h4 class="card-title">Siro Healthy New Kids hỗ trợ kích thích tiêu hóa, giúp ăn ngon Siro Healthy New Kids (120ml)</h4>
-        <p class="card-text">
-          81.000đ/Chai
-        </p>
-      </div>
-    </div>
-  </div>
-  <div class="col-md-2">
-    <div class="card text-left">
-      <img class="card-img-top" src="./assets/img/products/pd_2.webp" alt="">
-      <div class="card-body">
-        <h4 class="card-title">Siro bổ phế Bối Mẫu Forte Mom And Baby Tất Thành hỗ trợ giảm ho, đau rát họng, khản tiếng (125ml)</h4>
-        <p class="card-text">
-          81.000đ/Chai
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
+<!-- </div> -->
