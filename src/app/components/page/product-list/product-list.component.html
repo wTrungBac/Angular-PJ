@@ -1,8 +1,33 @@
-<mat-grid-list cols="6" rowHeight="fit" style="height: 600px" gutterSize="10px">
-  <mat-grid-tile rowspan="2">
-
+<mat-grid-list cols="4" rowHeight="100px">
+  <mat-grid-tile colspan="1" rowspan="11">
+    <app-category></app-category>
   </mat-grid-tile>
-  <mat-grid-tile rowspan="2" colspan="5">
-
+  <mat-grid-tile colspan="3" rowspan="1">
+    <h1>Danh mục sản phẩm</h1>
+  </mat-grid-tile>
+  <mat-grid-tile colspan="3" rowspan="10" [ngStyle]="">
+    <ul class="product list-item1">
+      <li *ngFor="let eachproduct of products;">
+        <mat-card style="box-shadow: 0 0 12px #aaa; border-radius: 12px; cursor: pointer; padding: 12px; display: block; box-sizing: border-box; transform: scale(1); max-width: 300px; padding: 2rem; margin: 0 auto">
+          <mat-card-header>
+            <img
+            [src]="eachproduct.productSrc"
+            style="height: 200px; width: 200px; margin: 0 auto" mat-card-xl-image>
+          </mat-card-header>
+          <mat-card-content>
+            <mat-card-subtitle>
+              <p>Siro Healthy New Kids hỗ trợ kích thích tiêu hóa, giúp ăn ngon (120ml)</p>
+            </mat-card-subtitle>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </mat-card-content>
+          <mat-card-footer>
+            <a href="#" class="btn btn-success mt-2">Thêm vào giỏ hàng</a>
+          </mat-card-footer>
+        </mat-card>
+      </li>
+    </ul>
   </mat-grid-tile>
 </mat-grid-list>

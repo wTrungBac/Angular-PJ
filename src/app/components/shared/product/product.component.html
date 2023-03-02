@@ -2,7 +2,7 @@
 <div class="mt-5">
   <ul class="product list-item">
     <li *ngFor="let eachproduct of products;">
-      <mat-card style="box-shadow: 0 0 12px #aaa; border-radius: 12px; cursor: pointer; padding: 12px; display: block; box-sizing: border-box; transform: scale(1); max-width: 300px; padding: 2rem; margin: 0 auto">
+      <mat-card [routerLink]="['/product-list']" style="box-shadow: 0 0 12px #aaa; border-radius: 12px; cursor: pointer; padding: 12px; display: block; box-sizing: border-box; transform: scale(1); max-width: 300px; padding: 2rem; margin: 0 auto">
         <mat-card-header>
           <img
           [src]="eachproduct.productSrc"

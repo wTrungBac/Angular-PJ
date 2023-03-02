@@ -2,3 +2,20 @@ mat-grid-tile{
   background-color: whitesmoke;
 }
 
+ul .list-item1{
+  padding: 0;
+  margin: 0 auto;
+}
+
+.list-item1 li{
+  list-style-type: none;
+  max-width: 300px;
+  display: inline-block;
+  margin: 30px;
+
+}
+
+.fa-star:before{
+  color: orange;
+}
+

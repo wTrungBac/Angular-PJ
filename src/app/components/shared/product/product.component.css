@@ -7,10 +7,22 @@ ul .list-item{
   list-style-type: none;
   max-width: 300px;
   display: inline-block;
-  margin: 31px;
+  margin: 30px;
 }
 
 .fa-star:before{
   color: orange;
 }
 
+@media screen and (max-with: 1500px) and (min-with: 1200px) {
+  .list-item li{
+    max-width: 200px;
+    justify-content: space-between;
+  }
+  img{
+    height: 100px;
+    width: 100px;
+    margin: 0 auto;
+  }
+
+}

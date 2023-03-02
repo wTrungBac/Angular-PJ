@@ -11,7 +11,7 @@ export interface ProductImage{
 export class ProductComponent implements OnInit{
   @Input() products: ProductImage[] = []
 
-  selectedIndex = 0;
+  // selectedIndex = 0;
 
   ngOnInit(): void {
 
