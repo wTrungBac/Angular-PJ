@@ -13,18 +13,4 @@ SwiperCore.use([Navigation, Pagination]);
 })
 export class CardComponent {
 
-  products = [
-    {
-      productSrc:'./assets/img/products/pd_1.jpg',
-    },
-    {
-      productSrc:'./assets/img/products/pd_2.webp',
-    },
-    {
-      productSrc:'./assets/img/products/pd_3.webp',
-    },
-    {
-      productSrc:'./assets/img/products/pd_4.jpg',
-    },
-  ]
 }

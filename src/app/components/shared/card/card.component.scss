@@ -1,9 +1,11 @@
 @import 'swiper/scss';
 @import 'swiper/scss/navigation';
 @import 'swiper/scss/pagination';
+@import '/src/themes/theme.scss';
 
 swiper{
-  background-color: #dec;
+  background-color: $blueish-color;
   width: 1500px;
   border-radius: 16px;
+  height: 470px;
 }

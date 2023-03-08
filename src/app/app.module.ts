@@ -14,12 +14,17 @@ import { ProductComponent } from './components/shared/product/product.component'
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatSliderModule} from '@angular/material/slider';
 import { BannerComponent } from './components/shared/banner/banner.component';
-import { CategoryComponent } from './components/shared/category/category.component';
+import { SidebarComponent } from './components/shared/sidebar/sidebar.component';
 import { CardComponent } from './components/shared/card/card.component';
 import { SwiperModule } from 'swiper/angular';
 import {MatCardModule} from '@angular/material/card';
 import {MatListModule} from '@angular/material/list';
+import {MatExpansionModule} from '@angular/material/expansion';
 import { FeatureComponent } from './components/shared/feature/feature.component';
+import {CloudinaryModule} from '@cloudinary/ng';
+import { ProductDetailComponent } from './components/page/product-detail/product-detail.component';
+import { AppDetail } from './components/page/product-detail/event/ImageChange';
+import {MatPaginatorModule} from '@angular/material/paginator';
 
 @NgModule({
   declarations: [
@@ -30,9 +35,11 @@ import { FeatureComponent } from './components/shared/feature/feature.component'
     ProductListComponent,
     ProductComponent,
     BannerComponent,
-    CategoryComponent,
     CardComponent,
-    FeatureComponent
+    FeatureComponent,
+    SidebarComponent,
+    ProductDetailComponent,
+    AppDetail,
   ],
   imports: [
     BrowserModule,
@@ -44,7 +51,10 @@ import { FeatureComponent } from './components/shared/feature/feature.component'
     MatSliderModule,
     SwiperModule,
     MatCardModule,
-    MatListModule
+    MatListModule,
+    MatExpansionModule,
+    CloudinaryModule,
+    MatPaginatorModule
   ],
   providers: [],
   bootstrap: [AppComponent]

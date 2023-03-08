@@ -1,0 +1,94 @@
+@import '/src/themes/theme.scss';
+
+.container{
+  width: 100%;
+  box-sizing: border-box;
+  .product-content{
+    display: flex;
+    width: 90%;
+    grid-column-gap: 45px;
+    // flex-wrap: wrap;
+    padding: $zero-padding $tertiary-padding;
+    .img-section{
+      width: 400px;
+      height: 400px;
+      .img-container{
+        img{
+          width: 100%;
+          height: 100%;
+        }
+        .img-prev{
+          margin-top: 10px;
+          .img-slide{
+            display: inline-block;
+            width: 24%;
+            margin: 0 1px;
+            cursor: pointer;
+            opacity: 0.6;
+          }
+          .active{
+            border: 2px solid $primary-color;
+            opacity: 1;
+          }
+        }
+      }
+    }
+    .detail-section{
+      width: 60%;
+
+      .product-name{
+        font-size: 30px;
+        margin-bottom: $main-padding;
+        color: $primary-color;
+        font-weight: 500;
+      }
+
+      .product-description{
+        font-size: $font-size18;
+        color: $greyish-color;
+        margin-bottom: $tertiary-padding;
+        justify-content: center;
+
+        h2{
+          font-size: $font-size18;
+        }
+
+        p{
+          font-size: $font-size16;
+        }
+      }
+
+      select{
+        width: 100%;
+        height: 68px;
+        background: $white-color;
+        font-size: $font-size18;
+        margin-bottom: 18px;
+        border: 1px solid $secondary-grey;
+        padding: 0 $secondary-padding;
+        box-sizing: border-box;
+      }
+
+      .btn-add-cart{
+        display: inline-block;
+        border: 1px solid $primary-color;
+        border-radius: 5px;
+        color: $primary-color;
+        font-size: $font-size20;
+        margin-right: $main-padding;
+        width: 245px;
+        height: 60px;
+        cursor: pointer;
+        &:hover{
+          background: #29873c;
+          color: $white-color;
+        }
+      }
+      .btn-success{
+        font-size: $font-size20;
+        width: 245px;
+        height: 60px;
+      }
+    }
+  }
+}

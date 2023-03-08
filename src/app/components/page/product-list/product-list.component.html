@@ -1,18 +1,16 @@
 <mat-grid-list cols="4" rowHeight="100px">
-  <mat-grid-tile colspan="1" rowspan="11">
-    <app-category></app-category>
+  <mat-grid-tile colspan="1" rowspan="12" style="overflow: scroll; align-items: initial;">
+    <app-sidebar style="padding-left: 1em;"></app-sidebar>
   </mat-grid-tile>
   <mat-grid-tile colspan="3" rowspan="1">
     <h1>Danh mục sản phẩm</h1>
   </mat-grid-tile>
-  <mat-grid-tile colspan="3" rowspan="10" [ngStyle]="">
+  <mat-grid-tile colspan="3" rowspan="10">
     <ul class="product list-item1">
       <li *ngFor="let eachproduct of products;">
-        <mat-card style="box-shadow: 0 0 12px #aaa; border-radius: 12px; cursor: pointer; padding: 12px; display: block; box-sizing: border-box; transform: scale(1); max-width: 300px; padding: 2rem; margin: 0 auto">
+        <mat-card [routerLink]="'/product-detail'" style="box-shadow: 0 0 12px #aaa; border-radius: 12px; cursor: pointer; padding: 12px; display: block; box-sizing: border-box; transform: scale(1); max-width: 300px; padding: 2rem; margin: 0 auto">
           <mat-card-header>
-            <img
-            [src]="eachproduct.productSrc"
-            style="height: 200px; width: 200px; margin: 0 auto" mat-card-xl-image>
+            <img [src]="eachproduct.productSrc" style="height: 200px; width: 200px; margin: 0 auto" mat-card-xl-image>
           </mat-card-header>
           <mat-card-content>
             <mat-card-subtitle>
@@ -29,5 +27,9 @@
         </mat-card>
       </li>
     </ul>
+  </mat-grid-tile>
+  <mat-grid-tile colspan="3" rowspan="1">
+    <mat-paginator [length]="100" [pageSize]="10" [pageSizeOptions]="[5, 10, 25, 100]" aria-label="Select page">
+    </mat-paginator>
   </mat-grid-tile>
 </mat-grid-list>
